@@ -3,6 +3,20 @@ function takeANumber(array, name){
   return "Welcome, " + name + ". You are number " + array.length + " in line."
 }
 
+var counter = 0
+
+function takeANumber(array){
+  /*if (array.length === 0){
+    array.push(array.length + 1)
+    return "Your number is: " + array.length
+  }
+  else{*/
+    counter++
+    array.push(counter)
+    return "Your number is: " + counter
+}
+
+
 function nowServing(array){
   if (array.length === 0){
     return "There is nobody waiting to be served!"
